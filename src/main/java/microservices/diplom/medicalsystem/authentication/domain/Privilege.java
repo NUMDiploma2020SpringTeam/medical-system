@@ -14,7 +14,13 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-
+/**
+ * 
+ * @author F I R E
+ *Privilege Class
+ *	Roles can have multiple privileges
+ *	Each privilege knows what roles are using them
+ */
 @Entity
 @RequiredArgsConstructor
 @Getter

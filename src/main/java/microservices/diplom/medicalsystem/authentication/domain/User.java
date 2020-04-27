@@ -17,7 +17,12 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-
+/**
+ * 
+ * @author F I R E
+ *User Class
+ *	
+ */
 @Entity
 @RequiredArgsConstructor
 @Getter

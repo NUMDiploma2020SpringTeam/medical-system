@@ -17,7 +17,15 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-
+/**
+ * 
+ * @author F I R E
+ *Role Class
+ *	Users can have multiple roles
+ *	On our case there are two types of role of Doctor and Nurse
+ *	Each role can has multiple privileges
+ *	
+ */
 @Entity
 @RequiredArgsConstructor
 @Getter

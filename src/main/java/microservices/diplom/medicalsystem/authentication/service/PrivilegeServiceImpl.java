@@ -7,7 +7,11 @@ import org.springframework.stereotype.Service;
 
 import microservices.diplom.medicalsystem.authentication.domain.Privilege;
 import microservices.diplom.medicalsystem.authentication.repository.PrivilegeRepository;
-
+/**
+ * Privilege Service implementation
+ * @author F I R E
+ *
+ */
 @Service
 @Transactional
 public class PrivilegeServiceImpl implements PrivilegeService {

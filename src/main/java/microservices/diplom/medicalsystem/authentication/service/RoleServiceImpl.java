@@ -7,7 +7,11 @@ import org.springframework.stereotype.Service;
 
 import microservices.diplom.medicalsystem.authentication.domain.Role;
 import microservices.diplom.medicalsystem.authentication.repository.RoleRepository;
-
+/**
+ * Role Service implementation Class
+ * @author F I R E
+ *
+ */
 @Service
 @Transactional
 public class RoleServiceImpl implements RoleService {

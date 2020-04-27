@@ -1,20 +1,24 @@
 <html>
-
 <head>
-	<title>title</title>
+    <th:block th:include="fragments/general.html :: headerfiles"></th:block>
+    <script>
+    	function onSubmit(e) {
+    		console.log("clicked");
+    		e.preventDefault();
+    	};
+    </script>
 </head>
-
 <body>
-        <div th:if="${param.error}">
-            Invalid username and password.
-        </div>
-        <div th:if="${param.logout}">
-            You have been logged out.
-        </div>
-        <form th:action="@{/login}" method="post">
-            <div><label> User Name : <input type="text" name="username"/> </label></div>
-            <div><label> Password: <input type="password" name="password"/> </label></div>
-            <div><input type="submit" value="Sign In"/></div>
-        </form>
-    </body>
+    <div th:if="${param.error}">
+        Нэр эсвэл нууц үг буруу байна.
+    </div>
+    <div th:if="${param.logout}">
+		Гарсан нь.
+    </div>
+    <form th:action="@{/login}" method="post" onSubmit="onSubmit()">
+        <div><label> Нэвтрэх нэр: <input type="text" name="username"/> </label></div>
+        <div><label> Нууц үг: <input type="password" name="password"/> </label></div>
+        <div><input class="btn btn-primary" type="submit" value="Нэвтрэх"/></div>
+    </form>
+</body>
 </html>
